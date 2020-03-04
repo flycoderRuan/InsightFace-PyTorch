@@ -1,3 +1,4 @@
+#本仓库fork自https://github.com/foamliu/InsightFace-PyTorch ,如有问题，请联系删除。
 # InsightFace
 
 PyTorch implementation of Additive Angular Margin Loss for Deep Face Recognition.
@@ -150,14 +151,3 @@ Allocating ranks (966884)
 
 Rank 1: <b>0.980616</b>
 
-</pre>
-
-
-## 小小的赞助~
-<p align="center">
-	<img src="https://github.com/foamliu/InsightFace-Pytorch/blob/master/sponsor.jpg" alt="Sample"  width="324" height="504">
-	<p align="center">
-		<em>若对您有帮助可给予小小的赞助~</em>
-	</p>
-</p>
-<br/><br/><br/>
