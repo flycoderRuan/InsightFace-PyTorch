@@ -94,19 +94,20 @@ def train_net(args):
         writer.add_scalar('model/train_accuracy', train_top1_accs, epoch)
 
         # One epoch's validation
-        megaface_acc = megaface_test(model)
-        writer.add_scalar('model/megaface_accuracy', megaface_acc, epoch)
+        # megaface_acc = megaface_test(model)
+        # writer.add_scalar('model/megaface_accuracy', megaface_acc, epoch)
 
         scheduler.step(epoch)
 
         # Check if there was an improvement
-        is_best = megaface_acc > best_acc
-        best_acc = max(megaface_acc, best_acc)
-        if not is_best:
-            epochs_since_improvement += 1
-            logger.info("\nEpochs since last improvement: %d\n" % (epochs_since_improvement,))
-        else:
-            epochs_since_improvement = 0
+        # is_best = megaface_acc > best_acc
+        # best_acc = max(megaface_acc, best_acc)
+
+        # if not is_best:
+        #     epochs_since_improvement += 1
+        #     logger.info("\nEpochs since last improvement: %d\n" % (epochs_since_improvement,))
+        # else:
+        #     epochs_since_improvement = 0
 
         # Save checkpoint
         save_checkpoint(epoch, epochs_since_improvement, model, metric_fc, optimizer, best_acc, is_best, scheduler)
