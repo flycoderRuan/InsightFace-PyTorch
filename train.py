@@ -110,6 +110,7 @@ def train_net(args):
         #     epochs_since_improvement = 0
 
         # Save checkpoint
+        best_acc = True
         save_checkpoint(epoch, epochs_since_improvement, model, metric_fc, optimizer, best_acc, is_best, scheduler)
 
 
